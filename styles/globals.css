@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'galano-medium';
+  src: url('../public/fonts/galanogrotesque-medium.otf');
+}
+@font-face {
+  font-family: 'galano-regular';
+  src: url('../public/fonts/galanogrotesque-regular.otf');
+}
+@font-face {
+  font-family: 'galano-semibold';
+  src: url('../public/fonts/galanogrotesque-semibold.otf');
+}
+
+@layer components {
+  .footer-text {
+    @apply cursor-pointer font-galRegular text-black-30 hover:text-black-12 hover:underline;
+  }
+}
